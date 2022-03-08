@@ -74,7 +74,6 @@ main{
 }
 .bs_wrap{
     width: 1200px;
-    height: 300px;
     margin:0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -82,20 +81,26 @@ main{
 }
 .bs{
     width: 400px;
-    height: 300px;
-    background: #ffeeb4;
     display: flex;
     flex-direction:column;
     align-items: center;
+    padding: 0 24px;
 }
 .bs_img{
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    background: green;
+    margin-bottom:12px;
+}
+.bs_img>img{
+    border-radius: 200px;
 }
 .bs_txt{
-    width:400px;
+    width:100%;
+    text-align: center;
+}
+.bs_txt>h3{
+    margin-bottom:5px;
 }
 /*메뉴 영역*/
 .menu{
@@ -132,7 +137,7 @@ main{
 .parallaxbg{
     width:100%;
     height: 300px;
-    background-image: url(../img/parallax.jpg);
+    background-image: url(../img/pa.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
