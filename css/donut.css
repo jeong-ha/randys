@@ -112,26 +112,57 @@ main{
     margin-bottom: 20px;
 }
 .menu_con{
-    background: skyblue;
     width: 1200px;
-    height: 400px;
+    height: 450px;
     display: flex;
 }
 .menu_sig{
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 450px;
     background: pink;
+    background-image: url(../img/best.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 .menu_sub{
-    width:400px;
-    height:400px;
+    width:650px;
+    height:450px;
     display:flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 .me{
     width:200px;
-    height: 200px;
-    background: red;
+    height: 210px;
+    background: white;
+    margin-right:10px;
+    position:relative;
+    border: 1px solid #999;
+}
+.me:nth-child(3n){margin-right:0;}
+.me:nth-of-type(1){margin-bottom:10px;}
+.menu_num{
+    position:absolute;
+    top:0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: #ff4e00;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+}
+.menu_name{
+    position:absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #333;
+    font-weight: bold;
 }
 /*parallaxbg*/
 .parallaxbg{
