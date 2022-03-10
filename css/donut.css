@@ -39,12 +39,14 @@ main{
     justify-content: center;
 }
 /*메인 슬라이드 영역*/
-.main_slide{
+.slider{
     width: 100%;
     background: #ffeeb4;
     position:relative;
 }
-.main_slide>img{height:100%;}
+.slider>item>img{height:100%;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom:10px;}
+.bx-wrapper{margin-bottom: 0;}
 .sliderbtn{
     position:absolute;
     bottom: 25px;
@@ -82,22 +84,20 @@ main{
 .bs{
     width: 400px;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
     padding: 0 24px;
 }
 .bs_img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
     border-radius: 200px;
-    margin-bottom:12px;
 }
 .bs_img>img{
     border-radius: 200px;
 }
 .bs_txt{
     width:100%;
-    text-align: center;
+    padding-left:12px;
 }
 .bs_txt>h3{
     margin-bottom:5px;
@@ -193,7 +193,7 @@ main{
     width: 502px;
     height: 400px;
     bottom: -30px;
-    right: 10px;
+    right: 0px;
     z-index:1;
     background: url('../img/building.png') no-repeat center center;
 }
@@ -201,9 +201,7 @@ main{
     width: 780px;
     float: left;
     height:300px;
-    background: orange;
     display: flex;
-    border: 1px solid #aaa;
 }
 .tabMenu {
     width: 200px; 
@@ -211,6 +209,8 @@ main{
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+    position:relative;
+    background: #f5f5f5;
 }
 .tabMenu a { 
     color: #000000; 
@@ -218,15 +218,77 @@ main{
 }
 
 .current { 
-    background-color: #FFFFFF; 
+    background-color: #ff4e00; 
     border-bottom:hidden; 
     transition: all 0.3s linear;
+}
+.current a {color: white;}
+current::before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    border-left: 21px solid white;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+    top:-1px;
+    left:0px;
+}
+.current::after{
+    content:"";
+    position:absolute;
+    height:50px;
+    background: #ff4e00;
+    top: 0px;
+    right: -1px;
+    width: 1px;
 }
 .tabPage{
     width: 580px; 
     height: 300px;
-    border-left: 1px solid #999;
+    border-top: 0px;
+    background: #ff4e00;
 }
+#tabContent01{
+    background:url(../img/store1.jpg) no-repeat center center / cover;
+}
+.location_txt{
+    text-align: center;
+    padding-top: 56px;
+    margin-bottom: 12px;
+}
+.location_txt>p:first-child{color: #ff4e00; font-weight: bold;}
+.location_form{
+    width: 65%;
+    margin: 0 auto;
+    padding-left: 6px;
+}
+#tabContent02{}
+.store_top{
+    width:100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 49px;
+    background:#ff4e00;
+}
+.store_img{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    float: left;
+}
+.store_txt{
+    width: 330px;
+    height: 250px;
+    float: left;
+    background: #fffad2;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+.store_txt>ul>li:nth-child(2n-1){font-weight: bold;}
+.store_txt>ul>li:nth-child(2n){margin-bottom: 6px;}
 /*sns 영역*/
 .sns_wrap{
     width:100%;
