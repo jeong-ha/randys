@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 ul, li{list-style-type: none;}
 a{color: #333; text-decoration: none;}
@@ -12,9 +13,18 @@ img{width: 100%;}
 header{
     width: 100%;
     height: 130px;
-    position:fixed;
+    position:absolute;
     z-index: 999;
+    transition: all 0.2s ease-in-out;
 }
+.fixed{
+    position: fixed; 
+    background: white; 
+    transition: 0.5s; 
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+.fixed .pc_nav>li>a{color: black;}
 header>.pc_nav{
     display: flex;
     width: 1200px;
@@ -30,7 +40,10 @@ header>.pc_nav{
     text-align:center;
     width: 100px;
 }
-.pc_nav>li>a{color: #000;}
+.pc_nav>li>a{
+    color: #000;
+    padding: 10px 12px;
+}
 /*콘텐츠 영역*/
 main{
     width: 100%;
@@ -44,9 +57,42 @@ main{
     background: #ffeeb4;
     position:relative;
 }
-.slider>item>img{height:100%;}
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom:10px;}
-.bx-wrapper{margin-bottom: 0;}
+.slider>item>img{
+    height:100%;
+}
+.bx-wrapper .bx-pager{
+    bottom:20px; 
+    padding-top: 0; 
+    left: 50%; 
+    transform: translatex(-50%);
+}
+.bx-wrapper{
+    margin-bottom: 0; 
+    box-shadow:0 0 0; 
+    border: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 15px; 
+    height: 15px; 
+    border-radius: 10px; 
+    margin: 0 10px;
+}
+.bx-wrapper .bx-controls-direction a{z-index:10;}
+.bx-wrapper .bx-prev{
+    left: 220px;
+    background-image:none; 
+    border-right: 21px solid rgba(0,0,0,0.6);
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+.bx-wrapper .bx-next{
+    right: 220px;
+    background-image:none; 
+    border-left: 21px solid rgba(0,0,0,0.6);
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid transparent;
+}
+/*
 .sliderbtn{
     position:absolute;
     bottom: 25px;
@@ -64,6 +110,7 @@ main{
 }
 .slider_circle:last-child{margin-right: 0;}
 .slider_circle:hover{background: #aaa;}
+*/
 /*이벤트 영역*/
 .event{
     width: 100%;
@@ -86,7 +133,7 @@ main{
     display: flex;
     flex-direction:row;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 23px;
 }
 .bs_img{
     width: 150px;
@@ -176,7 +223,7 @@ main{
     justify-content: center;
     align-items: center;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 /*매장찾기 영역*/
 .store{
@@ -202,6 +249,7 @@ main{
     float: left;
     height:300px;
     display: flex;
+    box-shadow: 0 0 3px 3px #ddd;
 }
 .tabMenu {
     width: 200px; 
@@ -211,10 +259,11 @@ main{
     cursor: pointer;
     position:relative;
     background: #f5f5f5;
+    border-bottom: 1px dotted #ddd;
 }
 .tabMenu a { 
     color: #000000; 
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .current { 
@@ -222,7 +271,7 @@ main{
     border-bottom:hidden; 
     transition: all 0.3s linear;
 }
-.current a {color: white;}
+.current a {color: white; font-weight: 500;}
 current::before{
     content:"";
     position:absolute;
@@ -256,14 +305,38 @@ current::before{
     text-align: center;
     padding-top: 56px;
     margin-bottom: 12px;
+    color:#333; 
+    font-size: 20px;
 }
-.location_txt>p:first-child{color: #ff4e00; font-weight: bold;}
+.location_txt>p:first-child{color: #ff4e00; font-weight: bold; font-size: 17px;}
 .location_form{
     width: 65%;
     margin: 0 auto;
     padding-left: 6px;
+    position: relative;
 }
-#tabContent02{}
+.location_form>form{
+    width: 280px; 
+    height: 45px;
+    position: absolute;
+    bottom: 11px;
+    left: 25px;
+}
+.location_form input{
+    border: none;
+    height: 45px;
+    width: 280px;
+    color: dimgray;
+}
+.location_ok{
+    position:absolute;
+    width: 70px;
+    height: 58px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    top:0;
+    right: 0;
+}
 .store_top{
     width:100%;
     height: 50px;
@@ -287,8 +360,8 @@ current::before{
     align-items: center;
     padding-left: 24px;
 }
-.store_txt>ul>li:nth-child(2n-1){font-weight: bold;}
-.store_txt>ul>li:nth-child(2n){margin-bottom: 6px;}
+.store_txt>ul>li:nth-child(2n-1){font-weight: 500; color: #111; }
+.store_txt>ul>li:nth-child(2n){margin-bottom: 6px; color: #333; font-weight: 300;}
 /*sns 영역*/
 .sns_wrap{
     width:100%;
@@ -334,6 +407,10 @@ current::before{
     width: 100%;
     text-align: center;
 }
+.sns_tit>p{
+    font-weight: 300;
+    margin-top: 6px;
+}
 .sns_icon{
     justify-content: center;
     display: flex;
@@ -344,6 +421,7 @@ current::before{
     height: 50px; 
     border-radius:25px;
     margin-right:10px;
+    cursor: pointer;
 }
 .icon:last-child{margin-right:0;}
 .sns_pic{
@@ -382,10 +460,11 @@ footer{
     margin-right: 24px;
     margin-bottom: 10px;
 }
+.footer_txt{font-weight: 300;}
 .footer_copy{
     width: 100%;
     text-align: center;
-    font-weight:bold;
+    font-weight:500;
 }
 
 
