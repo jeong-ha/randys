@@ -1,11 +1,19 @@
+//스크롤 헤더
+$(window).on('scroll', function() { 
+    if ($(window).scrollTop() > 50) { 
+        $('header').addClass("fixed"); 
+    } else { 
+        $('header').removeClass("fixed"); 
+    } 
+});
+
 //메인 슬라이드
 $(document).ready(function() {
             $('.slider').bxSlider({
                 auto: true,
-                autoControls: true,
+                autoControls: false,
                 stopAutoOnClick: true,
                 pager: true,
-                slideWidth: 600,
                 speed:500
             });
         });
@@ -41,3 +49,4 @@ $(function () {
     // 탭 초기화 및 설정
     tabSetting();
 });
+
