@@ -1,4 +1,16 @@
+//메인 슬라이드
+$(document).ready(function() {
+            $('.slider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 600,
+                speed:500
+            });
+        });
 
+//매장찾기 탭메뉴
 function tabSetting() {
     $('.tabPage').hide();
     $($('.current').find('a').attr('href')).show();
