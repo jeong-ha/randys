@@ -50,3 +50,16 @@ $(function () {
     tabSetting();
 });
 
+//sns사진 부분
+$(document).ready(function() {
+            $('.sns_pic').bxSlider({
+                auto: false,
+                autoControls: false,
+                stopAutoOnClick: true,
+                pager: false,
+                speed:500
+            });
+        });
+
+
+
