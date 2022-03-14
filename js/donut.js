@@ -9,14 +9,14 @@ $(window).on('scroll', function() {
 
 //메인 슬라이드
 $(document).ready(function() {
-            $('.slider').bxSlider({
-                auto: true,
-                autoControls: false,
-                stopAutoOnClick: true,
-                pager: true,
-                speed:500
-            });
-        });
+    $('.slider').bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: true,
+        speed:500
+    });
+});
 
 //매장찾기 탭메뉴
 function tabSetting() {
@@ -52,14 +52,16 @@ $(function () {
 
 //sns사진 부분
 $(document).ready(function() {
-            $('.sns_pic').bxSlider({
-                auto: false,
-                autoControls: false,
-                stopAutoOnClick: true,
-                pager: false,
-                speed:500
-            });
-        });
+    $('.sns_pic').bxSlider({
+        auto: false,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: false,
+        speed:500,
+        infiniteLoop:true
+    });
+});
+
 
 
 
