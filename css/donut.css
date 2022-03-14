@@ -428,13 +428,12 @@ current::before{
     }
 
 /*important구간*/
-.sub_sns .slider{width: 760px !important;}
 .sub_sns .bx-wrapper .bx-pager {display: none;}
 .sub_sns .bx-wrapper .bx-controls-direction a{display: none;}
 .sub_sns .bx-wrapper{background: none;}
 
 .insta{
-    min-width: 200px; 
+    max-width: 200px; 
     height: 200px; 
     margin-right: 6px; 
     float: left; 
@@ -515,7 +514,7 @@ footer{
     .bs{flex-direction: column;}
     .bs_txt>h3{text-align: center;}
     .menu_sig{display: none; }
-    .menu_sub{width: 100%;}
+    .menu_sub{width: 100%; padding-left: 0px;}
     .parallaxbg{height: 170px;}
     .store{width: 100%;}
     .search{width: 676px;}
@@ -557,7 +556,7 @@ footer{
     .sns_tit{text-align: center;}
     .sns_icon{justify-content:center;}
     .sns_up{margin-bottom: 20px;}
-    .insta{min-width: 150px; height: 150px;}
+    .insta{max-width: 150px; height: 150px;}
     .insta>img{width: 150px; height:150px;}
     .sns_wrap{padding: 50px 0 70px 0;}
 }
@@ -575,15 +574,17 @@ footer{
     footer{height: 360px; display: flex; align-items: center;}
     .footer_img{margin-bottom: 0; margin-right: 0;}
     .footer_content{flex-direction:column; flex-wrap: nowrap;}
-    .insta{min-width: 100px; height: 100px;}
+    .insta{max-width: 100px; height: 100px;}
     .insta>img{width: 100px; height: 100px;}
     .sub_sns .slider{height: 100px;}
 }
 
 
 
+/*sub page*/
 
-
+/*brand story*/
+main{height: 1000px;}
 
 
 
