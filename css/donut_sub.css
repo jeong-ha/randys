@@ -92,9 +92,9 @@ main{overflow: hidden;}
     padding: 36px;
     position: relative;
 }
-.brand_left>h2{font-size: 2.7rem; margin-bottom:12px; line-height:50px;}
+.brand_left>h2{font-size: 2.7rem; margin-bottom:12px; line-height:50px; font-weight: 300;}
 .brand_left>p{font-size: 1.25rem;}
-.brand_right>h2{font-size: 2.7rem; margin-bottom:12px; line-height:50px;}
+.brand_right>h2{font-size: 2.7rem; margin-bottom:12px; line-height:50px; font-weight: 300;}
 .brand_right>p{font-size:1.25rem;}
 /*브랜드1*/
 .brand1{margin-bottom: 80px;}
