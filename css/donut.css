@@ -171,6 +171,7 @@ main{
 .menu_sig{
     width: 550px;
     min-height:200px;
+    cursor: pointer;
     /*
     background: pink;
     background-image: url(../img/best.jpg);
@@ -192,6 +193,7 @@ main{
     margin-right:10px;
     position:relative;
     border: 1px solid #999;
+    cursor: pointer;
 }
 .me:nth-child(3n){margin-right:0;}
 .me:nth-of-type(1){margin-bottom:10px;}
