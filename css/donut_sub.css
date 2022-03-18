@@ -372,12 +372,12 @@ footer{
 .bm{
     width: 16%;
     border: 1px solid #ccc;
-    position: relative;
+    position: relative;    
 }
 .bm_num{
     position:absolute;
-    top: 1px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
     text-align: center;
     width: 25px;
     height: 25px;
@@ -454,10 +454,37 @@ footer{
     justify-content: center;
     background: rgba(255,78,0,0.8);
     transition: all 0.2s linear;
+    padding: 0 20px;
 }
-.menu_name>h2{margin-bottom: 12px; width:100%;}
+.menu_name>h2{margin-bottom: 12px; width:100%; position:}
 .menu_name>p{width: 100%;}
 .mudonuts:hover .menu_name{opacity: 1;}
+.bestd::after{
+    content: "BEST";
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background: #ff4e00;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 28px;
+}
+.newd::after{
+    content: "NEW";
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    background: #204998;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 28px;
+}
 /*메뉴 반응형*/
 /*1024~1280*/
 @media only screen and (max-width: 1279px){
@@ -684,6 +711,7 @@ footer{
     display:none;
     position:relative;
     top:40px;
+
 }
 #etab1:checked~.etab:nth-of-type(1) {display:block;}
 #etab2:checked~.etab:nth-of-type(2) {display:block;}
