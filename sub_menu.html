@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
         <link rel="stylesheet" href="css/donut_sub.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/donut.js"></script>
@@ -29,17 +30,411 @@
         <!--콘텐츠 영역-->
         <main>
             <div class="header_fix"></div> 
-            <div class="sub_title_wrap_event">
+            <div class="sub_title_wrap_menu">
                 <div class="sub_title">
                     <div class="ind">
-                        <span>home(아이콘으로 변경)</span>><span>이벤트</span>
+                        <span><i class="fas fa-home" onclick="location.href='./index.html'"></i></span>><span>메뉴</span>
                     </div>
-                    <p>Randy's Donuts Event & Promotion</p>
-                    <h2>Event</h2>
+                    <p>Randy's Donuts Delicious & Variety</p>
+                    <h2>Menu</h2>
+                </div>
+            </div>
+            <!--베스트 메뉴-->
+            <div class="main_t">
+                <h1>BEST MENU</h1>
+            </div>
+            <div class="sub_best_menu">
+                <div class="bm">
+                    <div class="bm_num">1</div>
+                    <img src="img/sub/menu/best/1-best.png" alt="best donut" />
+                    <div class="bm_txt">글레이즈 도넛</div>
+                </div>
+                <div class="bm">
+                    <div class="bm_num">2</div>
+                    <img src="img/sub/menu/best/2-best.png" alt="best donut" />
+                    <div class="bm_txt">버터 크림 도넛</div>
+                </div>
+                <div class="bm">
+                    <div class="bm_num">3</div>
+                    <img src="img/sub/menu/best/3-best.png" alt="best donut" />
+                    <div class="bm_txt">누텔라 도넛</div>
+                </div>
+                <div class="bm">
+                    <div class="bm_num">4</div>
+                    <img src="img/sub/menu/best/4-best.png" alt="best donut" />
+                    <div class="bm_txt">가나슈 도넛</div>
+                </div>
+                <div class="bm">
+                    <div class="bm_num">5</div>
+                    <img src="img/sub/menu/best/5-best.png" alt="best donut" />
+                    <div class="bm_txt">엠앤엠 도넛</div>
+                </div>
+                <div class="bm">
+                    <div class="bm_num">6</div>
+                    <img src="img/sub/menu/best/6-best.png" alt="best donut" /> <div class="bm_txt">카라멜 코코넛 도넛</div>
                 </div>
             </div>
             <!--메뉴-->
-
+            <div class="main_t">
+                <h1>MENU</h1>
+            </div>
+            <div class="menu_tab">
+                <input type="radio" name="tab" id="mtab1" class="mtab" checked>
+                <label for="mtab1">All</label>
+                <input type="radio" name="tab" id="mtab2" class="mtab">   
+                <label for="mtab2">Classic</label>
+                <input type="radio" name="tab" id="mtab3" class="mtab">
+                <label for="mtab3">Deluxe</label>
+                <input type="radio" name="tab" id="mtab4" class="mtab">
+                <label for="mtab4" id=mtabl>Fancy</label>
+                <input type="radio" name="tab" id="mtab5" class="mtab">
+                <label for="mtab5" id=mtabr>Premium</label>
+                    <div class="mudonuts classic bestd">
+                        <img src="img/sub/menu/classic/1-best.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>글레이즈 도넛</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/2.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>초콜릿 도넛</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/3.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>슈가 도넛</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/4.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>플레인 도넛</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/5.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>초콜렛 케이크</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/6.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>메이플 케이크</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/7.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>바닐라 케이크</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/8.png" alt="classic donut" />
+                        <div class="menu_name">
+                            <h2>데블스 케이크</h2>
+                            <p>2,200원</p>
+                        </div>
+                    </div>
+                <!--빼기
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/9.png" alt="classic donut" />
+                    </div>
+                    <div class="mudonuts classic">
+                        <img src="img/sub/menu/classic/10.png" alt="classic donut" />
+                    </div>
+                -->
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/1.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>핑크 스프링클 도넛</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe marx">
+                        <img src="img/sub/menu/deluxe/2.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>스프링클 케이크</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe marx">
+                        <img src="img/sub/menu/deluxe/3.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>라즈베리 케이크</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/4.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>블루베리 케이크</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/5.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>더블 블루베리 케이크</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/6.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>글레이즈 올드 패션</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/7.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>초콜릿 올드 패션</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/8.png" alt="deluxe donut" />
+                        <div class="menu_name">
+                            <h2>바닐라 크롤러</h2>
+                            <p>2,500원</p>
+                        </div>
+                    </div>
+                <!--
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/9.png" alt="deluxe donut" />
+                    </div>
+                    <div class="mudonuts deluxe">
+                        <img src="img/sub/menu/deluxe/10.png" alt="deluxe donut" />
+                    </div>
+                -->
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/1-new.jpg" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>커피 크럼 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy bestd">
+                        <img src="img/sub/menu/fancy/2-best.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>버터 크럼 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/3.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>오레오 오즈 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/4.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>초콜릿 크론디</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/5.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>베어 클라우</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/6.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>슈가 크론디</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/7.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>글레이즈 크론디</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/8.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>초콜릿 코코넛 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/9.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>코코넛 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/10.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>로스트 코코넛 도넛</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/11.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>시나몬 롤</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts fancy">
+                        <img src="img/sub/menu/fancy/12.png" alt="fancy donut" />
+                        <div class="menu_name">
+                            <h2>타이거 테일</h2>
+                            <p>2,900원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/1.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>크림 사탕 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/2.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>코코 라즈베리 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/3.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>블루베리 필링 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/4.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>초코 크런치 스트로베리 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/5.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>레몬 필링 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium bestd">
+                        <img src="img/sub/menu/premium/6-best.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>누텔라 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/7-best.png" alt="premium donut" />
+                        <div class="menu_name bestd">
+                            <h2>가나슈 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/8.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>딸기 필링 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/9.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>텍사스 글레이즈 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/10.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>라즈베리 필링 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/11.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>민트 초콜릿 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/12.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>스모어 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium bestd">
+                        <img src="img/sub/menu/premium/13-best.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>엔앰엔 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/14.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>메이플 츄러스 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium bestd">
+                        <img src="img/sub/menu/premium/15-best.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>카라멜 코코넛 도넛</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/16.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>애플 프리터</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/17.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>베이컨 메이플 롱존</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/18.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>메이플 크림 롱존</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+                    <div class="mudonuts premium">
+                        <img src="img/sub/menu/premium/19.png" alt="premium donut" />
+                        <div class="menu_name">
+                            <h2>초콜릿 초코 롱존</h2>
+                            <p>3,300원</p>
+                        </div>
+                    </div>
+            </div>
 
         </main>
         <!--푸터-->

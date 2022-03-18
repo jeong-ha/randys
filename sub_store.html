@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/donut_sub.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/donut.js"></script>
@@ -29,16 +31,138 @@
         <!--콘텐츠 영역-->
         <main>
             <div class="header_fix"></div> 
-            <div class="sub_title_wrap_event">
+            <div class="sub_title_wrap_store">
                 <div class="sub_title">
                     <div class="ind">
-                        <span>home(아이콘으로 변경)</span>><span>이벤트</span>
+                        <span><i class="fas fa-home" onclick="location.href='./index.html'"></i></span>><span>매장찾기</span>
                     </div>
-                    <p>Randy's Donuts Event & Promotion</p>
-                    <h2>Event</h2>
+                    <p>Welcome to Randy's Donuts!</p>
+                    <h2>STORE</h2>
                 </div>
             </div>
-            <!--메뉴-->
+            
+            <!--내 주변 매장 찾기-->
+            <div class="main_t_near">
+                <h1>NEAR ME</h1>
+            </div>
+            <div class="sub_store_map">
+                <div class="sub_store_location">
+                    <div class="maejang">
+                        <h2>매장 찾기</h2>
+                    </div>
+                    <div class="whereisme">
+                        <div class="nowlocation"><i class="fas fa-map-pin"></i> 현재 위치</div>
+                        <div class="location_select">
+                            <select name="sido" class="sido">
+                                <option value="">시/도 선택</option>
+                                <option value="서울">서울</option>
+                                <option value="대구">대구</option>
+                                <option value="제주">제주</option>
+                            </select>
+                            <select name="gungu" class="gungu">
+                                <option value="">군/구 선택</option>
+                                <option value="서울">-</option>
+                                <option value="대구">-</option>
+                                <option value="제주">-</option>
+                            </select>
+                        </div>
+                        <div class="sub_store_search">
+                            <form>
+                                <input type="text" id="location" name="location" placeholder="지역을 입력해 주세요.">
+                            </form>
+                            <div class="sub_ok">
+                                검색
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--모든 매장-->
+            <div class="main_t">
+                <h1>STORES</h1>
+            </div>
+            <div class="all_store">
+                <div class="store_white">
+                    <div class="sub_stst">
+                        <div class="sub_stst_t">
+                            <h2>랜디스 도넛 서울 가로수길점</h2>
+                        </div>
+                        <div class="sub_stst_map">
+                            <img src="img/sub/store_garosu_map.jpg" alt="" />
+                        </div>
+                        <ul class="sub_stst_txt">
+                            <li><b><i class="fas fa-map-marker-alt"></i> 주소</b> 서울 특별시 강남구 도산대로 15길 16</li>
+                            <li><b><i class="fas fa-clock"></i> 영업시간</b> 월 ~ 일 / AM11:00 - PM21:00</li>
+                            <li><b><i class="fas fa-mobile-alt"> </i> 전화번호</b> 02-511-3255</li>
+                            <li><b><i class="fas fa-car"></i> 주차</b> 불가능</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="store_yellow">
+                    <div class="sub_stst">
+                        <div class="sub_stst_t">
+                            <h2>랜디스 도넛 서울 안국점</h2>
+                        </div>
+                        <div class="sub_stst_map">
+                            <img src="img/sub/store_anguk_map.jpg" alt="" />
+                        </div>
+                        <ul class="sub_stst_txt">
+                            <li><b><i class="fas fa-map-marker-alt"></i> 주소</b> 서울 특별시 종로구 북촌동 3, 1층(재동)</li>
+                            <li><b><i class="fas fa-clock"></i> 영업시간</b> 월 ~ 일 / AM11:00 - PM21:00</li>
+                            <li><b><i class="fas fa-mobile-alt"> </i> 전화번호</b> 02-747-0621</li>
+                            <li><b><i class="fas fa-car"></i> 주차</b> 불가능</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="store_white">
+                    <div class="sub_stst">
+                        <div class="sub_stst_t">
+                            <h2>랜디스 도넛 서울 연남점</h2>
+                        </div>
+                        <div class="sub_stst_map">
+                            <img src="img/sub/store_yeonnam_map.jpg" alt="" />
+                        </div>
+                        <ul class="sub_stst_txt">
+                            <li><b><i class="fas fa-map-marker-alt"></i> 주소</b> 서울 특별시 마포구 동교로 247</li>
+                            <li><b><i class="fas fa-clock"></i> 영업시간</b> 월 ~ 일 / AM11:00 - PM21:00</li>
+                            <li><b><i class="fas fa-mobile-alt"> </i> 전화번호</b> 02-322-0621</li>
+                            <li><b><i class="fas fa-car"></i> 주차</b> 불가능</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="store_yellow">
+                    <div class="sub_stst">
+                        <div class="sub_stst_t">
+                            <h2>랜디스 도넛 대구 동성로점</h2>
+                        </div>
+                        <div class="sub_stst_map">
+                            <img src="img/sub/store_map.jpg" alt="" />
+                        </div>
+                        <ul class="sub_stst_txt">
+                            <li><b><i class="fas fa-map-marker-alt"></i> 주소</b> 대구 광역시 중구 공평동 동성로 6길 56</li>
+                            <li><b><i class="fas fa-clock"></i> 영업시간</b> 월 ~ 일 / AM11:00 - PM21:00</li>
+                            <li><b><i class="fas fa-mobile-alt"> </i> 전화번호</b> 053-255-1222</li>
+                            <li><b><i class="fas fa-car"></i> 주차</b> 불가능</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="store_white">
+                    <div class="sub_stst">
+                        <div class="sub_stst_t">
+                            <h2>랜디스 도넛 제주 애월점</h2>
+                        </div>
+                        <div class="sub_stst_map">
+                            <img src="img/sub/store_jeju_map.jpg" alt="" />
+                        </div>
+                        <ul class="sub_stst_txt">
+                            <li><b><i class="fas fa-map-marker-alt"></i> 주소</b> 제주도 제주시 애월읍 애월리 2471</li>
+                            <li><b><i class="fas fa-clock"></i> 영업시간</b> 월 ~ 일 / AM10:00 - PM19:00</li>
+                            <li><b><i class="fas fa-mobile-alt"> </i> 전화번호</b> 064-799-0610</li>
+                            <li><b><i class="fas fa-car"></i> 주차</b> 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
         </main>
