@@ -511,8 +511,8 @@ footer{
     header{height: 110px;}
     header>.pc_nav{width: 100%; padding: 10px 0 4px 0;}
     .pc_nav img{width: 80px;}
-    .slidepc{display:none !important;}
     .slideres{display: block !important;}
+    .slidepc{display:none !important;}
     .bx-wrapper .bx-prev{left: 5px;}
     .bx-wrapper .bx-next{right: 5px;}
     .bs_wrap{width:100%;}
@@ -564,8 +564,8 @@ footer{
 
 /*(480~768)*/
 @media only screen and (max-width:767px){
-    .slideres{display: none !important;}
     .slidemo{display: block !important;}
+    .slideres{display: none !important;}
     .event{padding-top: 40px;}
     .bs_wrap{flex-direction: column;}
     .bs{flex-direction: row; width: 90%; margin-bottom: 12px;}
@@ -600,8 +600,8 @@ footer{
     .mobile_logo>img{width:105px; height: 45px; cursor:pointer;}
     header>.pc_nav{height: 36px;}
     header{height: 88px;}
-    .slidemo{display: none !important;}
     .slider370{display: block!important;}
+    .slidemo{display: none !important;}
     footer{height: 360px; display: flex; align-items: center;}
     .footer_img{margin-bottom: 0; margin-right: 0;}
     .footer_content{flex-direction:column; flex-wrap: nowrap;}
