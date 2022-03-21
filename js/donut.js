@@ -1,14 +1,17 @@
-//스크롤 헤더
-$(window).on('scroll', function() { 
-    if ($(window).scrollTop() > 50) { 
-        $('header').addClass("fixed"); 
-    } else { 
-        $('header').removeClass("fixed"); 
-    } 
-});
-
-//메인 슬라이드
 $(document).ready(function() {
+
+    //스크롤 헤더
+    $(window).on('scroll', function() { 
+        if ($(window).scrollTop() > 50) { 
+            $('header').addClass("fixed"); 
+        } else { 
+            $('header').removeClass("fixed"); 
+        } 
+    });
+    //
+
+
+    //메인 슬라이드
     $('.slider').bxSlider({
         auto: true,
         autoControls: false,
@@ -16,10 +19,10 @@ $(document).ready(function() {
         pager: true,
         speed:500
     });
-});
 
-//매장찾기 탭메뉴
-function tabSetting() {
+
+    //매장찾기 탭메뉴
+    function tabSetting() {
     $('.tabPage').hide();
     $($('.current').find('a').attr('href')).show();
     // Tab 메뉴 클릭 이벤트 생성
@@ -42,16 +45,16 @@ function tabSetting() {
         }
 
         return false;
-    });
-}
+        });
+        }
 
-$(function () {
-    // 탭 초기화 및 설정
-    tabSetting();
-});
+        $(function () {
+        // 탭 초기화 및 설정
+        tabSetting();
+        });
 
-//sns사진 부분
-$(document).ready(function() {
+
+    //sns사진 부분
     $('.sns_pic').bxSlider({
         auto: false,
         autoControls: false,
@@ -60,8 +63,22 @@ $(document).ready(function() {
         speed:500,
         infiniteLoop:true
     });
+
+
+    //top버튼
+    $(document).ready(function(){
+        $('.top_btn').hide();
+    })
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 150) {
+            $('.top_btn').fadeIn(200);
+        } else {
+            $('.top_btn').fadeOut(200);
+        }
+    });
+    $('.top_btn').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500);
+    });
 });
-
-
-
 
