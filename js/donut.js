@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
     //메인 슬라이드
-    $('.slider').bxSlider({
+    $('.mslider').bxSlider({
         auto: true,
         autoControls: false,
         stopAutoOnClick: true,
