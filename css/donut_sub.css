@@ -234,6 +234,34 @@ footer{
     font-weight:500;
 }
 
+/*top버튼*/
+.top_btn{
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,150,0,0.5);
+    cursor:pointer;
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+}
+.top_tri{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%,-60%);
+    z-index:10;
+    user-select: none;
+}
+
+
 /*default, brand 반응형*/
 
 /*(1024~1280)*/
@@ -273,6 +301,7 @@ footer{
     .brand5_wrap>.brand_right{height: auto;}
     .brand5_wrap>.brand_right>img{position: relative; top: 0px; left: 0px; width: 100%;}
     .brand5_wrap>.brand_left{padding: 0 36px 0 0;}
+    .top_btn{right: 20px; bottom: 20px;}
 }
 
 /*(768~1024)*/
@@ -333,7 +362,7 @@ footer{
     .pc_nav>li{width:25%;}
     .pc_nav>li:nth-child(3){display: none;}
     .mobile_logo{display: block; display: flex; justify-content: center; padding-top: 6px;}
-    .mobile_logo>img{width:105px; height: 45px;}
+    .mobile_logo>img{width:105px; height: 45px; cursor:pointer;}
     header>.pc_nav{height: 36px;}
     header{height: 88px;}
     footer{height: 360px; display: flex; align-items: center;}
@@ -357,7 +386,7 @@ footer{
 .sub_title_wrap_menu{
     width:100%;
     height: 230px;
-    background: url(../img/sub/brandstory_tit.jpg) no-repeat center center / cover;
+    background: url(../img/sub/menu_tit.jpg) no-repeat center center / cover;
     margin-bottom: 80px;
 }
 
@@ -523,7 +552,7 @@ footer{
 .sub_title_wrap_store{
     width:100%;
     height: 230px;
-    background: url(../img/sub/brandstory_tit.jpg) no-repeat center center / cover;
+    background: url(../img/sub/store_tit.jpg) no-repeat center center / cover;
     margin-bottom: 80px;
 }
 .main_t_near{text-align: center; margin-bottom: 50px;}
@@ -692,7 +721,7 @@ footer{
 .sub_title_wrap_event{
     width:100%;
     height: 230px;
-    background: url(../img/sub/brandstory_tit.jpg) no-repeat center center / cover;
+    background: url(../img/sub/event_tit.jpg) no-repeat center center / cover;
     margin-bottom: 80px;
 }
 
