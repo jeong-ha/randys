@@ -12,7 +12,17 @@ $(document).ready(function() {
 
 
     //메인 슬라이드
- 
+   $('.mslider').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        auto: true,
+        speed: 500,
+        pause: 5000,
+        pauseOnHover: true,
+        slideMargin:0,
+       controls: true,
+        loop:true
+    });
 
 
     //매장찾기 탭메뉴
@@ -49,7 +59,18 @@ $(document).ready(function() {
 
 
     //sns사진 부분
-
+    $('.sns_pic').lightSlider({
+        adaptiveHeight:true,
+        item:4,
+        auto: true,
+        speed: 300,
+        pause: 2000,
+        pauseOnHover: true,
+        slideMargin:4,
+        controls: false,
+        pager: false,
+        loop:true
+    });
 
 
     //top버튼
