@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>Randy's Donuts(포트폴리오 페이지)</title>
         <meta charset="utf-8">
+        <title>Randy's Donuts(포트폴리오 페이지)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/lightslider.css">
@@ -10,7 +10,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/lightslider.js"></script>
         <script src="js/donut.js"></script>
-
     </head>
     <body>
         <!--헤더 영역-->
@@ -52,6 +51,19 @@
                     <img src="img/370slider3.jpg" alt="랜디스 도넛 굿즈 증정 이벤트 랜디스만의 특별한 굿즈를 얻을 기회 놓치지 마세요!" class="slider370"/>
                 </li>
             </ul>
+            <script>
+              $('.mslider').lightSlider({
+                adaptiveHeight:true,
+                item:1,
+                auto: true,
+                speed: 500,
+                pause: 5000,
+                pauseOnHover: true,
+                slideMargin:0,
+               controls: true,
+                loop:true
+            });
+            </script>
             <!--이벤트 영역-->
             <div class="event">
                 <div class="bs_wrap">
@@ -341,6 +353,20 @@
                                 <img src="img/sns/pic9.jpg" alt="instadonut"/>
                             </li>
                         </ul>
+                        <script>
+                         $('.sns_pic').lightSlider({
+                            adaptiveHeight:true,
+                            item:4,
+                            auto: true,
+                            speed: 300,
+                            pause: 2000,
+                            pauseOnHover: true,
+                            slideMargin:4,
+                            controls: false,
+                            pager: false,
+                            loop:true
+                        });
+                            </script>
                           
                     </div>
                 </div>
