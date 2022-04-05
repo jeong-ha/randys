@@ -369,9 +369,9 @@
                                 }
                                 if (i < minPgr) {
                                     pagers = null;
-                                    $slide.parent().addClass('r');
+                                    $slide.parent().addClass('noPager');
                                 } else {
-                                    $slide.parent().removeClass('r');
+                                    $slide.parent().removeClass('noPager');
                                 }
                                 break;
                             }
