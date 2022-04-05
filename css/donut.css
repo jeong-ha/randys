@@ -47,6 +47,7 @@ header>.pc_nav{
 }
 .pc_nav>li:nth-child(3){cursor:pointer;}
 #small_logo{display:none;}
+
 /*콘텐츠 영역*/
 main{
     width: 100%;
@@ -60,44 +61,13 @@ main{
     background: transparent;
     position:relative;
 }
-.slider>item>img{
-    height:100%;
+.item img{
+    display: block;
 }
 .slideres{display:none !important;}
 .slidemo{display:none !important;}
 .slider370{display:none !important;}
-.bx-wrapper .bx-pager{
-    bottom:20px; 
-    padding-top: 0; 
-    left: 50%; 
-    transform: translatex(-50%);
-}
-.bx-wrapper{
-    margin-bottom: 0; 
-    box-shadow:0 0 0; 
-    border: none;
-}
-.bx-wrapper .bx-pager.bx-default-pager a{
-    width: 15px; 
-    height: 15px; 
-    border-radius: 10px; 
-    margin: 0 10px;
-}
-.bx-wrapper .bx-controls-direction a{z-index:10; top:55%;}
-.bx-wrapper .bx-prev{
-    left: 220px;
-    background-image:none; 
-    border-right: 18px solid rgba(0,0,0,0.5);
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-}
-.bx-wrapper .bx-next{
-    right: 220px;
-    background-image:none; 
-    border-left: 18px solid rgba(0,0,0,0.5);
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-}
+
 /*
 .sliderbtn{
     position:absolute;
@@ -430,10 +400,6 @@ current::before{
     overflow: visible;
     }
 
-/*important구간*/
-.sub_sns .bx-wrapper .bx-pager {display: none;}
-.sub_sns .bx-wrapper .bx-controls-direction a{display: none;}
-.sub_sns .bx-wrapper{background: none;}
 
 .insta{
     max-width: 200px; 
@@ -513,8 +479,6 @@ footer{
     .pc_nav img{width: 80px;}
     .slideres{display: block !important;}
     .slidepc{display:none !important;}
-    .bx-wrapper .bx-prev{left: 5px;}
-    .bx-wrapper .bx-next{right: 5px;}
     .bs_wrap{width:100%;}
     .bs{padding: 0 12px;}
     .menu{width: 100%;}
@@ -534,8 +498,6 @@ footer{
 
 /*(768~1024)*/
 @media only screen and (max-width:1023px){
-    .bx-wrapper .bx-controls-direction a{width: 25px; height: 25px;}
-    .bx-wrapper .bx-pager.bx-default-pager a{width: 10px; height: 10px;}
     header{height: 70px;}
     header>.pc_nav{padding: 0;}
     .pc_nav a{font-size: 1rem;}
