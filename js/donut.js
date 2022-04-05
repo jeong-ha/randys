@@ -12,12 +12,16 @@ $(document).ready(function() {
 
 
     //메인 슬라이드
-    $('.mslider').bxSlider({
+   $('.mslider').lightSlider({
+        adaptiveHeight:true,
+        item:1,
         auto: true,
-        autoControls: false,
-        stopAutoOnClick: true,
-        pager: true,
-        speed:500
+        speed: 500,
+        pause: 5000,
+        pauseOnHover: true,
+        slideMargin:0,
+       controls: true,
+        loop:true
     });
 
 
@@ -55,13 +59,17 @@ $(document).ready(function() {
 
 
     //sns사진 부분
-    $('.sns_pic').bxSlider({
-        auto: false,
-        autoControls: false,
-        stopAutoOnClick: true,
+    $('.sns_pic').lightSlider({
+        adaptiveHeight:true,
+        item:4,
+        auto: true,
+        speed: 300,
+        pause: 2000,
+        pauseOnHover: true,
+        slideMargin:4,
+        controls: false,
         pager: false,
-        speed:500,
-        infiniteLoop:true
+        loop:true
     });
 
 
