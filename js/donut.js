@@ -59,18 +59,7 @@ $(document).ready(function() {
 
 
     //sns사진 부분
-    $('.sns_pic').lightSlider({
-        adaptiveHeight:true,
-        item:4,
-        auto: true,
-        speed: 300,
-        pause: 2000,
-        pauseOnHover: true,
-        slideMargin:4,
-        controls: false,
-        pager: false,
-        loop:true
-    });
+
 
 
     //top버튼
