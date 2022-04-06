@@ -1138,7 +1138,5 @@
         return this;
     };
     
-    new lightSlider('.mslider');
-    new lightSlider('.sns_pic');
     
 }(jQuery));
