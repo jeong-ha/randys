@@ -394,10 +394,18 @@ current::before{
     cursor: pointer;
 }
 .icon:last-child{margin-right:0;}
+.sns_pic_wrap{
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
 .sns_pic{
     height:200px; 
-    display:flex;  
     overflow: visible;
+    position:absolute;
+    top: 0px;
+    right: -500px;
     }
 
 
@@ -549,6 +557,7 @@ footer{
     .sns_tit{text-align: center;}
     .sns_icon{justify-content:center;}
     .sns_up{margin-bottom: 20px;}
+    .sns_pic_wrap{height: 150px;}
     .insta{max-width: 150px; height: 150px;}
     .insta>img{width: 150px; height:150px;}
     .sns_wrap{padding: 50px 0 70px 0;}
@@ -567,6 +576,7 @@ footer{
     footer{height: 360px; display: flex; align-items: center;}
     .footer_img{margin-bottom: 0; margin-right: 0;}
     .footer_content{flex-direction:column; flex-wrap: nowrap;}
+    .sns_pic_wrap{height: 100px;}
     .insta{max-width: 100px; height: 100px;}
     .insta>img{width: 100px; height: 100px;}
     .sub_sns .slider{height: 100px;}
