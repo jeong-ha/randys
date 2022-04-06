@@ -57,7 +57,18 @@ $(document).ready(function() {
         tabSetting();
         });
 
-
+   $('.sns_pic').lightSlider({
+        adaptiveHeight:true,
+        item:4,
+        auto: true,
+        speed: 500,
+        pause: 2000,
+        pauseOnHover: true,
+        slideMargin:4,
+       controls: false,
+       pager: false,
+        loop:true
+    });
     
     
     
