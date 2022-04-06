@@ -394,18 +394,11 @@ current::before{
     cursor: pointer;
 }
 .icon:last-child{margin-right:0;}
-.sns_pic_wrap{
-    width: 90%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
+
 .sns_pic{
     height:200px; 
+    display:flex;
     overflow: visible;
-    position:absolute;
-    top: 0px;
-    right: -500px;
     }
 
 
