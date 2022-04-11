@@ -8,6 +8,22 @@ $(document).ready(function() {
             $('header').removeClass("fixed"); 
         } 
     });
+    
+    //메인 슬라이드 추후 수정 필요
+    var currentIndex = 0;
+    var currentWidth = $('.item').width();
+    
+    setInterval(function(){
+        if(currentIndex < 2){
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        var slidePosition = currentIndex * -currentWidth;
+        $('.mslider').animate({left:slidePosition}, 300)
+    }, 3000);
+    
+    
 
     //top버튼
     $(document).ready(function(){
