@@ -56,11 +56,20 @@ main{
     justify-content: center;
 }
 /*메인 슬라이드 영역*/
-.slider{
-    width: 100%;
-    background: transparent;
-    position:relative;
+.slider_wrap{
+    width:100%;
+    position: relative;    
+    overflow: hidden;
+    min-height:334px;
 }
+.mslider{
+    width: 300%;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+.mslider>li{float: left;}
 .item img{
     display: block;
 }
