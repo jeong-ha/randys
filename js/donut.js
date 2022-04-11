@@ -12,7 +12,7 @@ $(document).ready(function() {
     //top버튼
     $(document).ready(function(){
         $('.top_btn').hide();
-    })
+    });
     $(document).scroll(function() {
         if ($(this).scrollTop() > 150) {
             $('.top_btn').fadeIn(200);
