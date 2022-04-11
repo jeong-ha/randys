@@ -24,6 +24,28 @@ $(document).ready(function() {
         loop:true
     });
 
+    //탭메뉴
+    $('.tab_go').click(function(){
+        $(this).parent().addClass('current')
+        .siblings().removeClass('current');
+        return false;
+    });
+    
+
+
+    //sns사진 부분
+    $('.sns_pic').lightSlider({
+        adaptiveHeight:true,
+        item:4,
+        auto: true,
+        speed: 300,
+        pause: 2000,
+        pauseOnHover: true,
+        slideMargin:4,
+        controls: false,
+        pager: false,
+        loop:true
+    });
 
 
     //top버튼
@@ -41,36 +63,5 @@ $(document).ready(function() {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 500);
     });
-});
-    //매장찾기 탭메뉴
-$(document).ready(function tabSetting() {
-    $('.tabPage').hide();
-    $($('.current').find('a').attr('href')).show();
-    // Tab 메뉴 클릭 이벤트 생성
-    $('.tab_Menu>li').click(function (event) {
-        var tagName = event.target.tagName; // 현재 선택된 태그네임
-        var selectedLiTag = (tagName.toString() == 'A') ? $(event.target).parent('.tab_Menu>li') : $(event.target); // A태그일 경우 상위 Li태그 선택, Li태그일 경우 그대로 태그 객체
-        var currentLiTag = $('.tab_Menu>li[class~=current]'); // 현재 current 클래그를 가진 탭
-        var isCurrent = false;  
-
-        // 현재 클릭된 탭이 current를 가졌는지 확인
-        isCurrent = $(selectedLiTag).hasClass('current');
-
-        // current를 가지지 않았을 경우만 실행
-        if (!isCurrent) {
-            $($(currentLiTag).find('a').attr('href')).hide();
-            $(currentLiTag).removeClass('current');
-
-            $(selectedLiTag).addClass('current');
-            $($(selectedLiTag).find('a').attr('href')).show();
-        }
-
-    return false;
-    });
-});
-
-$(function () {
-// 탭 초기화 및 설정
-tabSetting();
 });
 
